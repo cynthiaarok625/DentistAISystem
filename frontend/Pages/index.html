@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Care</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-plus"></i>
+            <span>Holicare</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a id="servicesLink" href="#">Our Service</a></li>
+            <li><a href="#">Medical Technology</a></li>
+            <li><a id="aboutUsLink" href="#">About Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="#" class="emergency">
+                Emergency: (123) 931-0000
+            </a>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>
+            Brighten Your Smile
+        </h1>
+
+        <h2>
+            With Expert Dental Care
+        </h2>
+
+        <p>
+            Experience a stress-free dental visit that puts you at the center
+            with gentle care, advanced technology, and a smile you'll love to
+            show off.
+        </p>
+
+    </section>
+
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+
+        <div class="appointment-container">
+
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1400"
+                alt="Dental Patient">
+
+            <div class="appointment-form">
+
+                <h3>Book Your Appointment Today</h3>
+
+                <input type="text" placeholder="Full Name">
+
+                <input type="text" placeholder="Contact Number">
+
+                <input type="date">
+
+                <input type="time">
+
+                <textarea
+                    placeholder="Describe Your Problem in Short.."></textarea>
+
+                <button id="submitBtn">
+                    Submit
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+<!-- Services Section -->
+ <section id="services" class="services-section">
+
+    <div class="section-header">
+        <span>OUR SERVICES</span>
+        <h2>Comprehensive Dental Care For Every Smile</h2>
+        <p>
+            We provide advanced dental treatments designed to improve your oral
+            health, restore confidence, and create beautiful smiles.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fa-solid fa-tooth"></i>
+            <h3>General Dentistry</h3>
+            <p>
+                Routine checkups, cleanings, fillings, and preventive care
+                to keep your teeth healthy.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-face-smile"></i>
+            <h3>Cosmetic Dentistry</h3>
+            <p>
+                Teeth whitening, veneers, and smile makeovers to enhance
+                your confidence.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Dental Implants</h3>
+            <p>
+                Permanent and natural-looking solutions for missing teeth.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-teeth-open"></i>
+            <h3>Orthodontics</h3>
+            <p>
+                Modern braces and aligners to straighten and improve
+                your smile.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- About Us Section -->
+ <section id="about" class="about-section">
+
+    <div class="about-content">
+
+        <div class="about-image">
+            <img src="images/dental-team.jpg" alt="Dental Team">
+        </div>
+
+        <div class="about-text">
+
+            <span>ABOUT US</span>
+
+            <h2>
+                Dedicated To Delivering Exceptional Dental Care
+            </h2>
+
+            <p>
+                At Holicare Dental Clinic, we combine modern dental technology
+                with compassionate patient care to provide a comfortable and
+                stress-free experience.
+            </p>
+
+            <p>
+                Our experienced team of dentists, hygienists, and specialists
+                focuses on preventive, restorative, and cosmetic dentistry,
+                ensuring every patient receives personalized treatment tailored
+                to their needs.
+            </p>
+
+            <div class="about-stats">
+
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>5000+</h3>
+                    <p>Happy Patients</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>15+</h3>
+                    <p>Dental Specialists</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Floating Chatbot -->
+
+<div class="chatbot-container">
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+
+        <div class="chat-header">
+            Dental Assistant
+            <span id="closeChat">&times;</span>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="bot-message">
+                Hi! How can I help you today?
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <input
+                type="text"
+                id="userMessage"
+                placeholder="Type your message..."
+            >
+            <button id="sendBtn">
+                Send
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Floating Button -->
+    <button class="chat-button" id="chatButton">
+        💬
+    </button>
+
+</div>
+
+
+<script src="../js/index.js"></script>
+
+</body>
+</html>
