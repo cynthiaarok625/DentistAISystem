@@ -46,7 +46,22 @@ and experience personalized dental care.
 </p>
 
 </div>
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <h4 class="popup-heading">Kindly enter your email address</h4>
 
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+        >
+
+        <div class="buttons">
+            <button id="submitBtn">Submit</button>
+            <button id="closeBtn">Cancel</button>
+        </div>
+    </div>
+</div>
 
 
 <div class="login-card">
@@ -76,7 +91,7 @@ type="password"
 placeholder="Password"
 required
 >
-
+<!-- 
 
 <select id="role">
 
@@ -98,7 +113,7 @@ Dentist
 
 </option>
 
-</select>
+</select> -->
 
 
 <button>
@@ -111,10 +126,12 @@ Continue
 
 <div class="footer-text">
 
-Need an account?
-<a href="#">
+Don't remember your password?
+<a href="#" id="ForgotPasswordLink">
 
-Register</a>
+Forgot Password</a>
+
+
 
 </div>
 

@@ -37,3 +37,16 @@ window.location.href=
 }
 
 });
+
+const registerLink = document.getElementById("ForgotPasswordLink");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+
+registerLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", function() {
+    popup.style.display = "none";
+});
